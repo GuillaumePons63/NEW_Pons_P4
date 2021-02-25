@@ -284,7 +284,7 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 2em;
 }
 
 .navbar {
@@ -295,7 +295,7 @@ a:hover {
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
-    font-size: 25px;
+    font-size: 1.5em;
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
@@ -325,7 +325,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -476,11 +476,11 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 1.25em!important;
 }
 
 .icon-lg {
-    font-size: 60px!important;
+    font-size: 3.5em!important;
 }
 
 .sm-shadow {
@@ -527,7 +527,7 @@ button {
 }
 
 .showScrollTop {
-    font-size: 14px;
+    font-size: 0.875em;
     opacity: 1;
 }
 
@@ -540,7 +540,7 @@ a[data-lightbox] {
 a[data-lightbox]:hover::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-    font-size: 32px;
+    font-size: 2em;
     width: 50px;
     height: 50px;
     margin-left: -25px;
@@ -589,7 +589,7 @@ a[data-lightbox]:hover img {
 
 .close-lightbox {
     color: #FFF;
-    font-size: 30px;
+    font-size: 2.45em;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -610,7 +610,7 @@ a[data-lightbox]:hover img {
 
 .next-lightbox,
 .prev-lightbox {
-    font-size: 20px;
+    font-size: 1.25em;
     color: rgba(255, 255, 255, .9);
     background: rgba(0, 0, 0, .5);
     transition: all .2s ease-in-out;
@@ -660,17 +660,17 @@ a {
 }
 
 .hero-bloc-text {
-    font-size: 38px;
+    font-size: 2.35em;
 }
 
 .hero-bloc-text-sub {
-    font-size: 36px;
+    font-size: 2.25em;
 }
 
 .statement-bloc-text {
     line-height: 26px;
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.25em;
     text-align: center;
     font-weight: lighter;
     max-width: 520px;
@@ -678,7 +678,7 @@ a {
 }
 
 p {
-    font-size: 12px;
+    font-size: 1em;
 }
 
 .tight-width-whitespace {
@@ -687,7 +687,7 @@ p {
 }
 
 .h1 {
-    font-size: 20px;
+    font-size: 1.25em;
     font-family: "Open Sans";
 }
 
@@ -696,7 +696,7 @@ p {
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
 }
 
@@ -706,12 +706,12 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 1.4em;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 0.95em;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
