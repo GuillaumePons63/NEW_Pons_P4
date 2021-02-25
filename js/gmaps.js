@@ -1,3 +1,18 @@
+let map;
+
+function initMap() {
+  const myLatLng = { lat: 45.76958, lng: 4.83068 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 16,
+    center: myLatLng,
+  });
+  new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "La chouette agence",
+  });
+}
+
 "use strict";
 (function(root, factory) {
   if(typeof exports === 'object') {
@@ -170,6 +185,7 @@ var GMaps = (function(global) {
   "use strict";
 
   var doc = document;
+  
   /**
    * Creates a new GMaps instance, including a Google Maps map.
    * @class GMaps
@@ -180,8 +196,27 @@ var GMaps = (function(global) {
    * * `el` (string or HTMLElement): container where the map will be rendered
    * * `markerClusterer` (function): A function to create a marker cluster. You can use MarkerClusterer or MarkerClustererPlus.
    */
-  var GMaps = function(options) {
 
+  
+  
+  var maps = function(options) {
+  
+    map = new GMaps({ 
+      el: "#map", 
+      zoom: 15, 
+      lat: 17.4574683, 
+      lng: 78.2822645, 
+      click: function (e) { 
+          var info = "Click event occured!"; 
+          $("#ClickEventDivID").text(info); 
+      }, 
+      dragend: function (e) { 
+          var info = "User dragged a location !"; 
+          $("#DragEventDivID").text(info); 
+      }, 
+  }); 
+  
+  
     if (!(typeof window.google === 'object' && window.google.maps)) {
       if (typeof window.console === 'object' && window.console.error) {
         console.error('Google Maps API is required. Please register the following JavaScript library https://maps.googleapis.com/maps/api/js.');
@@ -2412,24 +2447,6 @@ if (!Array.prototype.indexOf) {
       return -1;
   }
 }
-
-/**
-Basic Map
-*/
-$(document).ready(function(){
-var map = new GMaps({
-  el: '#basic_map',
-  lat: 51.5073346,
-  lng: -0.1276831,
-  zoom: 12,
-  zoomControl : true,
-  zoomControlOpt: {
-      style : 'SMALL',
-      position: 'TOP_LEFT'
-  },
-  panControl : false,
-});
-});
 
 return GMaps;
 }));
