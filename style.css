@@ -1059,3 +1059,18 @@ h4 {
   .focus:focus-visible {
       border : black 4px dashed;
   }
+
+.textlogo {
+    width:268px;
+    height:50px;
+}
+
+.logo {
+    width:100px;
+    height:100px;
+}
+
+.img-folio {
+    width:300px;
+    height:300px;
+}
