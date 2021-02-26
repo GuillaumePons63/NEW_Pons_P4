@@ -552,7 +552,7 @@ a[data-lightbox]:hover::before {
     z-index: 1;
     position: absolute;
     top: 50%;
-    left:50%;
+    left:43%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
