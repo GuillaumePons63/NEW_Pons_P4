@@ -1,15 +1,17 @@
-let map;
 
-function initMap() {
-  const myLatLng = { lat: 45.76958, lng: 4.83068 };
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 16,
-    center: myLatLng,
-  });
-  new google.maps.Marker({
-    position: myLatLng,
-    map,
-    title: "La chouette agence",
-  });
-}
 
+new GMaps({
+  div: '#map',
+  lat: -12.043333,
+  lng: -77.028333
+});
+
+
+map.addMarker({
+  lat: -12.043333,
+  lng: -77.028333,
+  title: 'La chouette agence',
+  click: function(e) {
+    alert('You clicked in this marker');
+  }
+});
