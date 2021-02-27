@@ -1,17 +1,11 @@
-
-
 new GMaps({
   div: '#map',
-  lat: -12.043333,
-  lng: -77.028333
+  lat: 45.76972,
+  lng: 4.83073,
 });
 
-
 map.addMarker({
-  lat: -12.043333,
-  lng: -77.028333,
+  lat: 45.76972,
+  lng: 4.83073,
   title: 'La chouette agence',
-  click: function(e) {
-    alert('You clicked in this marker');
-  }
 });
